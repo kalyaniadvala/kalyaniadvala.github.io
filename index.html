@@ -1,172 +1,233 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kalyani advala</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      #h {
+        position: sticky;
+        top: 0px;
+        background: linear-gradient(#6c65eb,#58ecef);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .row1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+      }
+      .row {
+        background:linear-gradient(rgba(69, 180, 171, 0.991),lightpink);
+        height: 80%;
+        padding:40px;
+      }
+      .box {
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+        height: 250px;
+        border: 5px solid teal ;
+        border-radius: 20px;
+        background-image: url(assets/1.jpg);
+        box-shadow: 3px 3px 3px 3px rgb(195, 213, 231);
+        transition-duration: 0.2s;
+        transition-property:transform;
+        background-size:cover;
+      }
+      .box:hover{
+        transform: scale(1.1,1.1);
+      }
+      .box1 {
+        margin: 20px;
+        padding: 30px;
+        width: 250px;
+        height: 200px;
+        box-shadow: 3px 3px 3px 3px rgb(195, 213, 231);
+        transition-duration: 0.2s;
+        transition-property:transform;
+        background-size:cover;
+      }
+      .container {
+        position: absolute;
+        scroll-behavior: smooth;
+        overflow: auto;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 100%;
+      }
+      .p1 {
+        font-size: 14px;
+        font-family: "verdana";
+        font-weight: bold;
+      }
+      .header {  
+         background-image: url(assets/3.png) ; 
+        background-size:cover;
+      }
+      .caption {
+        background-color: rgb(48, 114, 245);
+        padding: 20px;
+        opacity: 0.5;
+        color: white;
+      }
+      ul{
+          margin: 0px;
+          padding: 0px;
+      }
+      li{
+        display: inline-block;
+        padding: 5px;
+        font-size: larger;
+      }
+      
+      .portfolio{
+        color: rgb(255, 255, 255);
+        opacity: 0.5px;
+      }
+      
+    </style>
   </head>
   <body>
     <div class="container">
-      <div class="header-row">
-        <div class="box"><h1>kalyani advala</h1></div>
-        <div class="box">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+    
+    <div id="h">
+      <h2>PORTFOLIO</h2>
+      <div>
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services" >Services</a>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-
-      <div class="row" id="home">
-        <div style="display: flex; padding-top: 50px">
-          <div class="box">
-            <h1>Full Stack Developer</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
-              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
-              perferendis assumenda?
-            </p>
-            <button>Button 1</button>
-            <button>Button 1</button>
-          </div>
-          <div class="box">
-            <img src="https://picsum.photos/id/2/400/400" />
-          </div>
-        </div>
-      </div>
-
-      <div id="projects" class="row" style="background-color: lightcoral">
-        <h1>Projects</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3><a href ="https://kalyaniadvala.github.io/kalyaniadvala/">Project 1</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3><a href ="https://kalyaniadvala.github.io/my-bank/">Project 2</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="services" class="row" style="background-color: lightblue">
-        <h1>Services</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Web App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Mobile App Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-
-          <div class="box">
-            <h3>Backend Development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-              Perspiciatis, ab.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="about" class="row">
-        <h1>About</h1>
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-          ipsa veniam deserunt asperiores nesciunt at provident itaque
-          cupiditate vel dolor.
-        </h3>
-        <h2>Skills</h2>
-        <h3>Java, Python, Reactjs</h3>
-        <p>Display the logo of all the technologies you know.</p>
-      </div>
-      <div
-        id="contact"
-        class="row"
-        style="background-color: lightgoldenrodyellow"
-      >
-        <h1>Contact</h1>
-        <div style="display: flex">
-          <div class="box">
-            <h3>Contact Form</h3>
-            <p>
-              <input type="text" placeholder="Enter Name" />
-            </p>
-            <p>
-              <input type="email" placeholder="Enter Email" />
-            </p>
-            <p>
-              <textarea
-                rows="10"
-                cols="60"
-                placeholder="Enter message"
-              ></textarea>
-            </p>
-            <button>Send</button>
-          </div>
-
-          <div class="box">
-            <h3>Your/Company Name</h3>
-            <p>
-              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Dolorem quia nobis eligendi reiciendis. Esse a possimus eum
-              est veritatis aliquid ut eveniet. Et illum odio ut voluptates
-              molestiae? Perspiciatis, ab.
-            </p>
-            <p><b>Email Address: </b>kalyaniadvala@email.com</p>
-            <p><b>Phone Number: </b>+91 9392745620</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
+    
+    <div class="row1 header" id="home">
+      <div class="portfolio">
+        <h2>WELCOME TO MY PORTFOLIO</h2>
+        <p class="p1"> I am KALYANI</p>
+        <p class="p1">Contact: advalakalyani4835@gmail.com</p><br><br>
+
+      
+      <div class="caption">
+        <h1>Full Stack Developer</h1>
+        <p class="p1">MERN | Java | Python</p>
+      </div>
+    </div>
+      <div><img  height="350px" width="400px" src="https://picsum.photos/id/1/400/400" />
+      </div>
+    </div>
+    <div class="row " id="projects" >
+      <h1>Projects</h1>
+      <div style="display: flex">
+      <div class="box">
+        <h2>Lappy hub</h2>
+        <p></p>
+        <a href="https://kalyaniadvala.github.io/kalyaniadvala/">View Project</a>
+      </div>
+      <div class="box">
+        <h2>HDFC Bank</h2><br>
+        <p>HDFC Bank (Housing Development Finance Corporation Bank) is one of India's leading private sector banks, headquartered in Mumbai, Maharashtra. Established in 1994, it is known for its strong financial services, customer-centric approach, and digital banking solutions.</p>
+        <a href="https://kalyaniadvala.github.io/my-bank/">View Project</a>
+      </div>
+      <div class="box">
+        <h2>Project 3</h2>
+        <p>This is my project 3</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+    </div>
+    <div id="services" class="row" style="background:linear-gradient(rgb(17, 126, 198),rgb(20, 248, 175))">
+      <h1>Services</h1>
+      <div style="display: flex">
+        <div class="box1">
+          <h3>Web App Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box1">
+          <h3>Mobile App Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+
+        <div class="box1">
+          <h3>Backend Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+            aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+            Perspiciatis, ab.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="row" style="height: 60%;">
+      <h1>About</h1><br><br>
+      <p>
+        Hi, I'm Kalyani Advala, a passionate and motivated Full Stack Developer eager to start my career in web development. As a fresher, I have a strong foundation in front-end and back-end technologies, including JavaScript, React, Node.js, and databases like MySQL.
+      </p>
+      <p>I enjoy building dynamic, user-friendly applications and solving technical challenges. My academic projects have given me hands-on experience in developing responsive designs, API integrations, and database management.</p>
+      <p>I'm always excited to take on new challenges, contribute to innovative projects, and grow as a developer. Looking forward to connecting and collaborating!</p><br><br>
+      <h2>Skills</h2><br>
+      <h3>Java, Python, MySQL</h3>
+    </div>
+    <div id="contact" class="row1" style="background:linear-gradient(rgb(17, 126, 198),rgb(20, 248, 175))">
+      <h1>Contact</h1><br><br>
+      <div style="display: flex">
+        <div class="box1">
+          <h3>Contact Form</h3>
+          <p>
+            <input type="text" placeholder="Enter Name" />
+          </p>
+          <p>
+            <input type="email" placeholder="Enter Email" />
+          </p>
+          <p>
+            <textarea
+              rows="8"
+              cols="30"
+              placeholder="Enter message"
+            ></textarea>
+          </p>
+          <button>Send</button>
+        </div>
+
+        <div class="box1">
+          <h3>Your/Company Name</h3>
+          <p>
+            <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Dolorem quia nobis eligendi reiciendis. Esse a possimus eum
+            est veritatis aliquid ut eveniet. Et illum odio ut voluptates
+            molestiae? Perspiciatis, ab.
+          </p>
+          <p><b>Email Address: </b>kalyaniadvala@email.com</p>
+          <p><b>Phone Number: </b>+91 9392745620</p>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <h3 style="background-color: rgb(0, 0, 0); color: white;">@Copyright 2024. All rights reserved.</h3>
+    </div>
+  </div>
   </body>
 </html>
